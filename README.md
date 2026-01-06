@@ -51,6 +51,8 @@ All analyses were conducted in Python using widely adopted, open-source scientif
 
 Warnings generated during execution were suppressed using the Python `warnings` module to improve interpretability of outputs.
 
+
+
 ## Appendix B: Details about the Project
 
 This project is a submission for the 2025 NFLPA data competition. Group members include Benjamin Harris-Myers and Sarah Akiki, and our team name is "The Cloudscrapers". We are representing the Trojans Sports Research Lab's Graduate Student team. 
@@ -80,3 +82,23 @@ All modeling and analysis occurs in the data_modeling folder. You will need to o
 1. modeling_setup.ipynb
 2. initial_analysis.ipynb
 3. modeling.ipynb
+
+#### Project Structure
+
+- **data_modeling/**
+  - `initial_analysis.ipynb` - Initial data exploration
+  - `modeling_setup.ipynb` - Model setup and configuration
+  - `modeling.ipynb` - Main modeling notebook
+  - **clean_data/**
+    - `agged_data.csv` - Aggregated data
+    - `agged_data2.csv` - Additional aggregated data
+    - `clean_inner_merged_data.csv` - Inner joined data
+    - `clean_left_merged_data.csv` - Left joined data
+    - `clean_outer_merged_data.csv` - Outer joined data
+    - `clean_right_merged_data.csv` - Right joined data
+- **data_prep/**
+    - `combine_csvs.ipynb` - Combine multiple CSVs
+    - `feature_engineering.ipynb` - Feature engineering
+    - `game_level_scraper.ipynb` - Game data scraper
+    - `injury_scraper.ipynb` - Injury data scraper
+    - `player_stat_scraper.ipynb` - Player stats scraper
